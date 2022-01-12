@@ -1,0 +1,27 @@
+{
+  "name": "familytree-be",
+  "version": "1.0.0",
+  "description": "Family tree backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjacob1/familytree-be.git"
+  },
+  "author": "Brian Jacob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjacob1/familytree-be/issues"
+  },
+  "homepage": "https://github.com/bjacob1/familytree-be#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
