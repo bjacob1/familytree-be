@@ -36,7 +36,6 @@ peopleRouter.get('/:id/children', async (req, res) => {
 
 peopleRouter.get('/:id/siblings', async (req, res) => {
   const person = await Person.findById(req.params.id)
-  console.log(person.first_name)
   let parent = null
   if(person.father_id !== 0) {
     parent = (await Person.find({ number: person.father_id }))[0]
