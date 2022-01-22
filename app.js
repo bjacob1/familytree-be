@@ -8,6 +8,9 @@ const path = require('path')
 
 mongoose.connect(config.MONGO_URI).then(() => console.log('mongo connected'))
 
+app.use('/api/people/', peopleRouter)
+app.use('/api/pictures/', picturesRouter)
+
 app.use(express.static('build'))
 
 app.get('/*', function(req, res) {
@@ -17,8 +20,5 @@ app.get('/*', function(req, res) {
     }
   })
 })
-
-app.use('/api/people/', peopleRouter)
-app.use('/api/pictures/', picturesRouter)
 
 module.exports = app
